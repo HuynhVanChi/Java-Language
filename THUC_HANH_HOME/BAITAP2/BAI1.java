@@ -37,14 +37,20 @@ public class BAI1 {
         }
     }
     public static void main(String[] argn)
-    {
+    { 
+        // tạo mảng
+        int []nElems = {10,9,8,7,6,5,4,3,2,1};
+        for(int i = 0 ; i < 10 ; i++)
+        {
+            System.out.print(" " + nElems[i]);
+        }
+        System.out.println();
         // Khởi tạo 1 đối tuongwh scanner
         Scanner sc = new Scanner(System.in);
         //cho phép người dùng nhập
         System.out.println("Moi nhap So tim kim :");
         int searchKey = sc.nextInt();
-        // tạo mảng
-        int []nElems = {10,9,8,7,6,5,4,3,2,1};
+       
         int result = find(nElems,searchKey);
         if (result != -1)
         {
