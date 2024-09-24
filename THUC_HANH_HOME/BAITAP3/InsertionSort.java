@@ -11,7 +11,7 @@ public class InsertionSort {
         {
             System.out.print(array[i] + " ");
         }
-        System.out.println(); // cach xuong dong
+        System.out.println(); // cách xuống dòng
         
         //ham sap xep insertionSort
         insertionSort(array);
@@ -23,24 +23,24 @@ public class InsertionSort {
             System.out.print(array[i] + " ");
         }   
     }
-    // Tao ham sap xep 
+    // Tạo hàm sắp xếp 
     public static void insertionSort(int []array) {
-        //Khai bao bien tam
+        //Khai báo biến tạm
         int tmp;
-        //Thuat toan sap xep insertionSort
+        //Thuật toán sắp xếp insertionSort
         for(int i = 1 ; i < array.length; i++)
         {
-            int key = array[i];
-            int j = i - 1;
+            tmp = array[i];
+            int j = i - 1; 
 
             // Move elements of array[0..i-1],that are greater than key
             //to one position ahead of their current position
-            while(j >= 0 && array[j] > key)
+            while(j >= 0 && array[j] > tmp)
             {
-                array[j + 1] = array[j];
-                j = j - 1;
+                array[j + 1] = array[j]; // hoán đổi 
+                j--; 
             }
-            array[j + 1] = key;
+            array[j + 1] = tmp;
         }
     }
 }
