@@ -29,7 +29,7 @@ public class thuchanh5 {
             }
             docfile.close();
         }catch (FileNotFoundException e) {
-            System.out.println("Không thể đọc file: ");
+              System.out.println("Không thể đọc file: "+ e.getMessage());
         }
         
         //hiện thị kết quả 
