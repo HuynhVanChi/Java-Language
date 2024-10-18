@@ -9,6 +9,7 @@ public class thuchanh4 {
         Scanner conso = new Scanner(System.in);
 
         System.out.print("Co bao nhieu so can tinh tong : ");
+        //Nhập số lượng tính
         int soluong = conso.nextInt();
 
         int []array = new int[soluong]; // cho so luong vao mang

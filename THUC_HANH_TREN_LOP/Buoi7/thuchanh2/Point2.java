@@ -42,6 +42,6 @@ public class Point2 {
     //Hàm in 
     public void print()
     {
-        System.out.println("Giai tri truoc khi dich chuyen x: "+ x + ". y: "+ y);
+        System.out.println("Giai tri x: "+ x + ". y: "+ y);
     }
 }
