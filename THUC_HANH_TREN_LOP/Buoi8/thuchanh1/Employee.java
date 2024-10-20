@@ -9,7 +9,7 @@ public class Employee {
     {
         return  this.hours;
     }
-    public int getSalary()
+    public double getSalary()
     {
         return this.salary;
     }

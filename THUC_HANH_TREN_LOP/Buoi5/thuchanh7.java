@@ -16,7 +16,7 @@ public class thuchanh7 {
         int cout = 0;
         //Khoi tao random 
         Random r = new Random();
-        int maytinh = r.nextInt(10) +1; // chay tu 1 - 10
+        int maytinh = r.nextInt(10) +9; // chay tu 1 - 10
         System.out.println("No la so : "+ maytinh + "(y/n): ");
         String chu = nhap.next();
         while(chu.equalsIgnoreCase("N"))
