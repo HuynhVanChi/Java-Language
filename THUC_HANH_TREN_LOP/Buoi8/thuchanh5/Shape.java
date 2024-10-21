@@ -6,12 +6,14 @@ public interface Shape {
 } 
 //implements: một lớp thực thi (triển khai) các phương thức được định nghĩa trong interface.
 class Rectangle implements Shape{ // rectangle phải triển khai dịnh nghĩa interface
-    double width;
-    double height;
-    public Rectangle(double w , double h)
+    //Biến thành viên
+    int width; 
+    int height;
+    public Rectangle(int width , int height)
     {
-        w = width;
-        h = height;
+        //this.width là biến thành viền , "width" biếlà tham số của constructor
+        this.width = width; 
+        this.height = height;
     }
     public double getArea()
     {
@@ -21,14 +23,20 @@ class Rectangle implements Shape{ // rectangle phải triển khai dịnh nghĩa
     {
         return 2*(width + height);
     }
+    //Hiện thị kết quả 
+    public String toString()
+    {
+        String Kq = "Hinh vuong: "+"\n"+"+Chu vi: "+ getPerimeter() + "\n" + "+Dien tich: "+ getArea();
+        return Kq ; 
+    }
 }
 //Lớp hình tròn
 class Circle implements Shape{
     
     int radius; // bán kính
-    public Circle(int r)
+    public Circle(int radius)
     {
-        r = radius;
+        this.radius = radius;
     }
     public double getArea()
     {
@@ -37,6 +45,12 @@ class Circle implements Shape{
     public double getPerimeter()
     {
         return 2*Math.PI*radius;     
+    }
+    //Hiện thị kết quả 
+    public String toString()
+    {
+        String Kq2 = "Hinh tron: "+"\n"+"+Chu vi: "+ getPerimeter() + "\n" + "+Dien tich: "+ getArea();
+        return Kq2 ; 
     }
 }
 class Triangle implements Shape{
@@ -52,15 +66,16 @@ class Triangle implements Shape{
     }
     public double getPerimeter()
     {
-        return (a+b+c)/2 ;
+        return (a+b+c)/2;
     }
-    //double s = getPerimeter();
-    
     public double getArea(){
-        return Math.sqrt(getPerimeter()*(getPerimeter()-a)*(getPerimeter()-b)*(getPerimeter()-c));
+        double s = (a+b+c)/2;
+        return Math.sqrt(s*(s-a)*(s-b)*(s-c));
     }
+    //Hiện thị kết quả 
     public String toString()
     {
-        
+        String Kq3 = "Tam giac: "+"\n"+"+Chu vi: "+ getPerimeter() + "\n" + "+Dien tich: "+ getArea();
+        return Kq3 ; 
     }
 }
