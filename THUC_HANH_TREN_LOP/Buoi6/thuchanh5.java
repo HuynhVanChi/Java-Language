@@ -20,7 +20,7 @@ public class thuchanh5 {
                 int next =docfile.nextInt(); // đọc từng phần tử và lưu vào biến next
                 count[next]++; // next = số thứ tự trong mảng
             }
-            
+            // Đóng Scanner sau khi đọc file
             docfile.close();
             
             //hiện thị kết quả 

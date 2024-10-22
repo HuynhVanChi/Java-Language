@@ -4,7 +4,14 @@ public class Secretary {
     int hours;
     int salary;
     int day;
-    int from;
+    String from;
+    public Secretary()
+    {
+        this.hours = 40;
+        this.salary = 40000;
+        this.day = 365;
+        this.from = "vàng";
+    }
     public int getHours()
     {
         return  this.hours;
@@ -17,7 +24,7 @@ public class Secretary {
     {
         return this.day;  
     }
-    public int getVacationFrom()
+    public String getVacationFrom()
     {
         return this.from;
     }
