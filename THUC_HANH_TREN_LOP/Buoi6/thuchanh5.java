@@ -6,20 +6,25 @@ import java.util.Scanner;
 
 public class thuchanh5 {
     public static void main(String[] args) {
-        // gán Đường dẫn tới file cho biến filePath 
+        
+        //Gán Đường dẫn tới file cho biến filePath 
         String filePath = "THUC_HANH_TREN_LOP/Buoi6/tally.txt";
         int [] count = new int[5]; //đếm các phần tử từ 0 - 4
+        
         //Câu lệnh FileNotFoundException
         try{
             File file = new File(filePath);//chỉ định đến file
+            
             // dùng Scanner để đọc file
             Scanner docfile = new Scanner(file);
+            
             //Đọc giá trị và tăng thứ tự mảng tương ứng với giá trị đọc được ; docfile.hasNextInt() = true
             while(docfile.hasNextInt()) //đọc file tally.txt đầu đến phần tử cuối cùng 
             {
                 int next =docfile.nextInt(); // đọc từng phần tử và lưu vào biến next
                 count[next]++; // next = số thứ tự trong mảng
             }
+            
             // Đóng Scanner sau khi đọc file
             docfile.close();
             
