@@ -49,8 +49,7 @@ class Circle implements Shape{
     //Hiện thị kết quả 
     public String toString()
     {
-        String Kq2 = "Hinh tron: "+"\n"+"+Chu vi: "+ getPerimeter() + "\n" + "+Dien tich: "+ getArea();
-        return Kq2 ; 
+        return "Hinh tron: "+"\n"+"+Chu vi: "+ getPerimeter() + "\n" + "+Dien tich: "+ getArea(); 
     }
 }
 class Triangle implements Shape{

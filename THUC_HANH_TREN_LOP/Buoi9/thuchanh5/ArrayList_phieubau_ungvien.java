@@ -1,5 +1,6 @@
 package THUC_HANH_TREN_LOP.Buoi9.thuchanh5;
 
+//Thư viện
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -62,7 +63,7 @@ public class ArrayList_phieubau_ungvien {
                 }
             }              
             //Tìm người chiến thắng
-            String tmp ;
+            String tmp;
             for(int i = 0 ; i < ungvien.size(); i++)
             {
                 int Max = 0;
@@ -92,11 +93,13 @@ public class ArrayList_phieubau_ungvien {
             System.out.println("Ung vien      So phieu      Ty le bau(%)");
             for(int i = 0; i < ungvien.size(); i++)
             {
-                double tylebau = ((phieubau.size()/ungvien.size())/phieubau.size())*100 ;
-                System.out.println("   "+ungvien.get(i)+"            "+demphieu[i]+"            "+((phieubau.size()/ungvien.size())/phieubau.size())*100);
+                double tylebau = ((phieubau.size()/ungvien.size())/phieubau.size())*100;
+                System.out.println("   "+ungvien.get(i)+"            "+demphieu[i]+"            "+tylebau);
             }
+            
             // Đóng Scanner sau khi đọc file
             input.close();
+        
         }catch(FileNotFoundException e){
             System.out.println("Khong the doc file");
         }
