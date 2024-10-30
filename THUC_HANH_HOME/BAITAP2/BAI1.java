@@ -6,6 +6,7 @@ Modify the Binary search algorithm for a descending array */
 import java.util.Scanner;
 
 public class BAI1 {
+    
     public static int find(int []nElems , long searchKey)
     {
         int lowerBound = 0; // lower : trái 
@@ -40,13 +41,16 @@ public class BAI1 {
     { 
         // tạo mảng
         int []nElems = {10,9,8,7,6,5,4,3,2,1};
+        
         for(int i = 0 ; i < 10 ; i++)
         {
             System.out.print(" " + nElems[i]);
         }
         System.out.println();
+        
         // Khởi tạo 1 đối tuongwh scanner
         Scanner sc = new Scanner(System.in);
+        
         //cho phép người dùng nhập
         System.out.println("Moi nhap So tim kim :");
         int searchKey = sc.nextInt();

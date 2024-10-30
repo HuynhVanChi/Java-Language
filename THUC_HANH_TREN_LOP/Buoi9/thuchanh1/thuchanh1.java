@@ -24,8 +24,10 @@ public class thuchanh1 {
         
         //Chèn tên "Hùng" vào giữa "Dung" và "Hoàng"
         ListName.add(3,"Hùng");
+        
         //chèn tên "Oanh" cuối dãy
         ListName.add(10,"Oanh");
+        
         //In ra danh sách đã thêm
         System.out.println("2.ArrayList Name: "+ ListName);
 

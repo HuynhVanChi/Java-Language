@@ -20,6 +20,7 @@ public class CollectionsSort {
             System.out.print(words.get(i) + " ");
         }
         System.out.println();
+        
         //lệnh sắp xếp Collections.Sort
         Collections.sort(words);
 
