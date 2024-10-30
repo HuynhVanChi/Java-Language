@@ -7,10 +7,12 @@ public class thuchanh3 {
         System.out.println(dmy.toString());
         
         //Tuần  
-        dmy.addWeeks(24);//Cho 4 tuần thì tăng 1 tháng
+        dmy.addWeeks(75);//Cho 4 tuần thì tăng 1 tháng
         //In ra KQ y/m/d khi thêm 4 tuần
         System.out.println(dmy.toString());
         
         //
+        dmy.daysTo(dmy);
+        System.out.println(dmy.toString());
     }
 }

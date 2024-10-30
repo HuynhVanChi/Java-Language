@@ -28,13 +28,14 @@ public class Date {
             //Kiểm tra nếu 30 ngày 
             if(this.d == 30)
             {
-                if (this.m > 12) 
-                {
-                    this.y++;    
-                    this.m = 0;
-                }
+                
                 this.m ++; // tăng tháng 
                 this.d = 0;//cho ngày quay về 0 
+            }
+            else if (this.m > 12) //Kiểm tra qua tháng 12 chưa 
+            {
+                this.y++;    //Nếu qua tăng năm lên
+                this.m = 1; //và cho tháng về tháng 1 
             }
             //Tăng ngày 
             this.d++; 

@@ -63,10 +63,10 @@ public class ArrayList_phieubau_ungvien {
                 }
             }              
             //Tìm người chiến thắng
-            String tmp;
+            String tmp = " ";
+            int Max = 0;
             for(int i = 0 ; i < ungvien.size(); i++)
             {
-                int Max = 0;
                 if(demphieu[i] > Max)
                 {
                     Max = demphieu[i];
@@ -87,8 +87,13 @@ public class ArrayList_phieubau_ungvien {
                         tmp = "D";
                     }
                 }
+                else if(demphieu[i] == Max)
+                {
+                    tmp = "Hoà";
+                }
             }
-
+            System.out.println();//cách dòng
+            
             //Hiện thị kết quả
             System.out.println("Ung vien      So phieu      Ty le bau(%)");
             for(int i = 0; i < ungvien.size(); i++)
@@ -96,6 +101,9 @@ public class ArrayList_phieubau_ungvien {
                 double tylebau = ((phieubau.size()/ungvien.size())/phieubau.size())*100;
                 System.out.println("   "+ungvien.get(i)+"            "+demphieu[i]+"            "+tylebau);
             }
+            
+            //hiện thị kết quả người thắng 
+            System.out.println("ket qua phieu bau la: "+tmp);
             
             // Đóng Scanner sau khi đọc file
             input.close();
