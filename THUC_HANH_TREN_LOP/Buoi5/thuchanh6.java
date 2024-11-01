@@ -6,7 +6,7 @@ public class thuchanh6 {
     public static void main(String[] args) {
         //Loi gioi thieu 
         System.out.println("Day la chuong trinh doan so cho truoc.");
-        System.out.print("Xin moi nhap so maban muon doan: ");
+        System.out.print("Xin moi nhap so ma ban muon doan: ");
 
         //Khoi dong so dem co dinh
         int so = 30;

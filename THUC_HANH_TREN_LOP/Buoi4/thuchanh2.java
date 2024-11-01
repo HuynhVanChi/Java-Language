@@ -28,7 +28,7 @@ public class thuchanh2 {
         {
             xeploai = "D";
         }
-        
+        else
         {
             xeploai = "F";
         }

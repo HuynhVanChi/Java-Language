@@ -1,10 +1,19 @@
-package THUC_HANH_TREN_LOP.Buoi8.thuchanh1;
+package THUC_HANH_TREN_LOP.Buoi8;
 
 public class Employee {
     int hours;
     int salary;
     int day;
-    int from;
+    String from;
+    //Hàm khởi tạo tham số 
+    public Employee(int h , int s , int d , String f)
+    {
+        this.hours = h;
+        this.salary = s;
+        this.day = d;
+        this.from = f;
+    }
+
     public int getHours()
     {
         return  this.hours;
@@ -17,7 +26,7 @@ public class Employee {
     {
         return this.day;  
     }
-    public int getVacationFrom()
+    public String getVacationFrom()
     {
         return this.from;
     }

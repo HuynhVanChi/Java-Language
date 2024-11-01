@@ -1,5 +1,5 @@
 package THUC_HANH_TREN_LOP.Buoi2;
-
+                                        //kHỞI TẠO GIÁ TRỊ BAN ĐẦU
 public class thuchanh2 {
      public static void main(String[] args) {
          // Khoi bao bien
@@ -16,7 +16,9 @@ public class thuchanh2 {
           //hien thi ket qua
           System.out.println("Gia tri BMI ");
           System.out.println(bmi);
-
+          
+          //=================================================================================================================
+          
           // Khoi tao gia tri ban dau
           double height2 = 70;
           double weight2 = 195;
@@ -26,6 +28,6 @@ public class thuchanh2 {
           System.out.println("Gia tri BMI 2 :");
           System.out.println(bmi2);
           System.out.println();
-          System.out.println("Gia tri BMI 2: " + bmi2);
+          System.out.println("Gia tri BMI 2: " + bmi2); //NỐI CHUỖI 
      }
 }

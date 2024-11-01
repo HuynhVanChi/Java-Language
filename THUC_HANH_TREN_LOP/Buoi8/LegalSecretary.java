@@ -1,6 +1,4 @@
-package THUC_HANH_TREN_LOP.Buoi8.thuchanh4;
-
-import THUC_HANH_TREN_LOP.Buoi8.thuchanh1.Employee;
+package THUC_HANH_TREN_LOP.Buoi8;
 
 public class LegalSecretary extends Employee  {
     //Cách ghi sai

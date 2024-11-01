@@ -25,9 +25,7 @@ public class taolich {
         lich(Songay,BatDau);
     }
     
-    public static void lich(int Songay , int BatDau) {
-        
-        
+public static void lich(int Songay , int BatDau) {
         boolean KiemTra = false ;
         int NgayBatDau = 0 , Ngay = 1;
         int SoNgayTrongTuan = 0;

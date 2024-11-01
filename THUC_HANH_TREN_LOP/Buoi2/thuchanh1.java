@@ -1,5 +1,5 @@
 package THUC_HANH_TREN_LOP.Buoi2;
-
+                                        //TÍNH GIÁ TRỊ BMI
 public class thuchanh1 {
      public static void main(String[] args) {
          // Khoi bao bien

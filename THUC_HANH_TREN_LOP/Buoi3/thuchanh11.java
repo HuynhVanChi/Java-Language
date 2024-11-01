@@ -11,19 +11,4 @@ public class thuchanh11 {
         System.out.println("|  27  |  28  |  29  |  30  |  31  |      |      |");
         System.out.println("+------+------+------+------+------+------+------+");
     }
-    public static void ve() {
-        System.out.println("+------+------+------+------+------+------+------+");
-    }
-    public static void lich() {
-        for(int line = 1 ; line <= 5; line++)
-        {
-            System.out.print("|");
-
-            for(int i = 1; i <= 6 ; i++)
-            {
-                System.out.print(" ");
-            }
-            System.out.println("|");
-        }
-    }
 }

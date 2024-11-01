@@ -7,15 +7,19 @@ public class thuchanh9 {
         bottomhalf();
         drawLine();
     }
+    //HÀM VẼ +------+
     public static void drawLine() {
+        
         System.out.print("+");
-        for(int i = 1 ; i <= 6 ; i++ )
+        for(int i = 1 ; i <= 6 ; i++ ) 
         {
-            System.out.print("-");
+            System.out.print("-");//IN "-" RA 6 LẦN
         }
         System.out.println("+");
     }
+    
     public static void tophalf() {
+        
         for(int i = 1 ; i <= 3; i++)
         {
             // in dau |

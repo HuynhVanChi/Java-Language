@@ -10,10 +10,10 @@ public class thuchanh10 {
         Scanner console = new Scanner(System.in);
 
         System.out.print("Xin moi nhap so doan:" );
-        int n = console.nextInt();
+        int n = console.nextInt();//NHẬP SỐ ĐOẠN
 
         System.out.print("Xin moi nhap so chieu cao: ");
-        int dong = console.nextInt();
+        int dong = console.nextInt();// CHIỀU CAO CỦA MỖI ĐOẠN
 
         int maxleng=(1+2*n)+6;
 
@@ -22,12 +22,15 @@ public class thuchanh10 {
             vecay(maxleng,batdau,dong);
             batdau=batdau+2;
         }
+
+        vecay(maxleng,1,1);
         vecay(maxleng,1,1);
         vecay(maxleng,1,1);
         vecay(maxleng,7,1);
     }
     public static void vecay(int maxleng, int batdau , int dong) {
         int i,j;
+        
         for(i=1;i<=dong;i++)
         {
             //Khoang cach ben trai
