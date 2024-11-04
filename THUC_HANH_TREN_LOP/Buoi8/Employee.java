@@ -5,7 +5,14 @@ public class Employee {
     int salary;
     int day;
     String from;
-    //Hàm khởi tạo tham số 
+    
+    //Hàm khởi tạo mặc định của nhân viên 
+    public Employee()
+    {
+        this(40,40000,10,"yellow");
+    }
+
+    //Hàm khởi tạo có giá trị
     public Employee(int h , int s , int d , String f)
     {
         this.hours = h;

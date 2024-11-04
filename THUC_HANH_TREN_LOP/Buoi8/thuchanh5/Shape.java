@@ -1,10 +1,12 @@
 package THUC_HANH_TREN_LOP.Buoi8.thuchanh5;
-// interface định nghĩa chu vi và diện tích 
+
+// Interface giúp định nghĩa các chức năng cần có mà không chỉ rõ cách thực hiện chúng
 public interface Shape {
     public double getArea(); // diện tích
     public double getPerimeter(); // chu vi
 } 
-//implements: một lớp thực thi (triển khai) các phương thức được định nghĩa trong interface.
+
+//Class thực hiện interface sẽ đảm bảo cung cấp đủ các phương thức được yêu cầu trong interface.
 class Rectangle implements Shape{ // rectangle phải triển khai dịnh nghĩa interface
     //Biến thành viên
     int width; 
@@ -40,7 +42,7 @@ class Circle implements Shape{
     }
     public double getArea()
     {
-        return Math.PI*radius; 
+        return Math.PI*Math.pow(radius,2); 
     }
     public double getPerimeter()
     {
@@ -52,6 +54,7 @@ class Circle implements Shape{
         return "Hinh tron: "+"\n"+"+Chu vi: "+ getPerimeter() + "\n" + "+Dien tich: "+ getArea(); 
     }
 }
+
 class Triangle implements Shape{
     double a;
     double b;

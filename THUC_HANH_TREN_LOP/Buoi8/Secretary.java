@@ -7,12 +7,21 @@ public class Secretary {
     String from;
     
     //Hàm khởi tạo mặc định
-    public Secretary(int h , int s , int d , String f)
+    public Secretary()
     {
         this.hours = 40;
         this.salary = 40000;
         this.day = 365;
         this.from = "vàng";
+    }
+
+    //Hàm khởi tạo có giá trị
+    public Secretary(int h , int s , int d , String f)
+    {
+        this.hours = h;
+        this.salary = s;
+        this.day = d;
+        this.from = f;
     }
 
     public int getHours()
