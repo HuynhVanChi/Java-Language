@@ -39,7 +39,7 @@ public class ArrayList_phieubau_ungvien {
             System.out.println("List = " + ungvien);
             
             //Sắp xếp từ A - z của list ứng viên 
-            Collections.sort(ungvien);
+            Collections.sort(ungvien); //Collections Sort
             System.out.println("List da sap xep: " + ungvien);
             
             //xem phiếu bầu có bao nhiêu phiếu bầu cho ứng viên
@@ -98,13 +98,13 @@ public class ArrayList_phieubau_ungvien {
             System.out.println("Ung vien      So phieu      Ty le bau(%)");
             for(int i = 0; i < ungvien.size(); i++)
             {
-                double tylebau = ((phieubau.size()/ungvien.size())/phieubau.size())*100;
-                System.out.println("   "+ungvien.get(i)+"            "+demphieu[i]+"            "+tylebau);
+                double tylebau = (((double)phieubau.size()/ungvien.size())/phieubau.size())*100;
+                System.out.println("   "+ungvien.get(i)+"            "+demphieu[i]+"            "+tylebau+"%");
             }
             
             //hiện thị kết quả người thắng 
             System.out.println("ket qua phieu bau la: "+tmp);
-            
+
             // Đóng Scanner sau khi đọc file
             input.close();
         

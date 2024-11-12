@@ -8,8 +8,13 @@ public class thuchanh3 {
         
         for(int i = 1 ; i <= 10 ; i++)
         {
+            //In ra ký hiệu ">"
             writeChars('>', i);
+            
+            //Hàm in ra khoảng trắng
             writeChars(' ', 20-2*i);
+
+            //in ra ký hiệu "<"
             writeChars('<', i);
             System.out.println();
         }

@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class thuchanh4 {
         public static void main(String[] args) {
         
-        //Yêu cầu người nhập số lượng cần nhập
+        //Khai báo Scanner
         Scanner conso = new Scanner(System.in);
-
+        
+        //Yêu cầu người nhập số lượng cần nhập
         System.out.print("Co bao nhieu so can tinh tong : ");
         //Nhập số lượng tính
         int soluong = conso.nextInt();

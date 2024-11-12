@@ -18,6 +18,7 @@ public class thuchanh10 {
         }
         System.out.println("+");
     }
+    
     public static void tophalf() {
         for(int i = 1 ; i <= 5; i++)
         {

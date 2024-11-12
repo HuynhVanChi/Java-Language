@@ -4,7 +4,7 @@ public class Shell_Sort {
     //Hàm main
     public static void main(String[] args) {
         //Tạo mảng
-        int[] array = {6, 7, 0, 2, 8, 1, 3, 9, 4, 5};
+        int[] array = {6, 7, 10, 2, 8, 1, 3, 9, 4, 5};
 
         //Hiện mảng chưa sắp xếp 
         for(int i = 0; i < array.length;i++)

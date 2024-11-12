@@ -27,8 +27,11 @@ public class taolich {
     
 public static void lich(int Songay , int BatDau) {
         boolean KiemTra = false ;
+        
         int NgayBatDau = 0 , Ngay = 1;
+        
         int SoNgayTrongTuan = 0;
+        
         System.out.println("  Sun    Mon    Tue    Wed    Thu    Fri    Sat");
         System.out.println("+------+------+------+------+------+------+------+");
         
